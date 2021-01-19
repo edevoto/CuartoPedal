@@ -1,0 +1,599 @@
+.navbar__logo, .navbar__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar {
+  background-color: #223547;
+  height: 80px;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  z-index: 10;
+  position: fixed;
+  -webkit-box-shadow: 0px 2px 2px #172430;
+          box-shadow: 0px 2px 2px #172430;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .navbar {
+    overflow: hidden;
+  }
+}
+
+.navbar__logo {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  margin-left: 25px;
+}
+
+.navbar__logo--img {
+  height: 60px;
+  width: 60px;
+}
+
+.navbar__bars {
+  display: none;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__bars {
+    color: #FDD04B;
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .navbar__bars {
+    color: #FDD04B;
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    padding: 15px;
+  }
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #FDD04B;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+}
+
+.navbar__menu {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  list-style: none;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__menu {
+    display: none;
+  }
+  .navbar__menu #navbar__menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .navbar__menu {
+    display: none;
+  }
+  .navbar__menu #navbar__menu {
+    display: none;
+  }
+}
+
+.navbar__menu--links {
+  color: #FDD04B;
+  padding: 0 1rem;
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar__menu--links:hover {
+  color: #FDD04B;
+}
+
+.navbar__menu #button {
+  padding: 12px;
+  margin-right: 50px;
+  color: #223547;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.navbar__menu #button:hover {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  color: #FDD04B;
+  -webkit-box-shadow: 0.5px 0.5px 2px #ffffff;
+          box-shadow: 0.5px 0.5px 2px #ffffff;
+}
+
+.servicios {
+  height: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.servicios__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90%;
+  width: 100vw;
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 1400px) {
+  .servicios__container {
+    height: 64rem;
+    margin-top: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .servicios__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 24rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .servicios__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 24rem;
+  }
+}
+
+.servicios__container--btn {
+  padding: 12px;
+  margin-right: 50px;
+  color: #223547;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #223547;
+}
+
+.servicios__container__box--izq {
+  background-image: url(/img/curso-online-mecanico-bicicletas_amp_primaria_1_1560503049.jpg);
+  -webkit-transition: 2s  ease-out;
+  transition: 2s  ease-out;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.servicios__container__box--izq:hover {
+  background-image: url(/img/images.jpg);
+}
+
+.servicios__container__box--izq, .servicios__container__box--cnt, .servicios__container__box--der {
+  z-index: 1;
+  margin: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 60vh;
+  text-align: start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: #FDD04B;
+  -webkit-box-shadow: 1px 0px 3px #FDD04B;
+          box-shadow: 1px 0px 3px #FDD04B;
+}
+
+@media screen and (min-width: 1400px) {
+  .servicios__container__box--izq, .servicios__container__box--cnt, .servicios__container__box--der {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100vw;
+    height: 46vh;
+    margin: 0 auto 10rem;
+    border: 1px solid #ffffff;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .servicios__container__box--izq, .servicios__container__box--cnt, .servicios__container__box--der {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100vw;
+    height: 40vh;
+    border: 1px solid #ffffff;
+    padding: 3rem;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .servicios__container__box--izq, .servicios__container__box--cnt, .servicios__container__box--der {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100vw;
+    height: 40vh;
+    border: 1px solid #ffffff;
+    padding: 3rem;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+.servicios__container__box--izq--btn, .servicios__container__box--cnt--btn, .servicios__container__box--der--btn {
+  padding: 12px;
+  color: #223547;
+  width: 25%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.servicios__container__box--izq--btn:hover, .servicios__container__box--cnt--btn:hover, .servicios__container__box--der--btn:hover {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  color: #FDD04B;
+  -webkit-box-shadow: 0.5px 0.5px 2px #ffffff;
+          box-shadow: 0.5px 0.5px 2px #ffffff;
+}
+
+.container {
+  margin-top: 15px;
+  padding: 0;
+  display: block;
+  position: relative;
+  top: 50px;
+  height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #FDD04B;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 2px 5px #2e2e2e;
+          box-shadow: 1px 2px 5px #2e2e2e;
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 100%;
+    height: 500px;
+    opacity: 0.9;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .container {
+    display: none;
+  }
+}
+
+.container__items {
+  border-radius: 3px;
+  width: 100vw;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #223547;
+  color: #FDD04B;
+}
+
+.container__items a {
+  color: #FDD04B;
+  text-decoration: underline;
+}
+
+.container__items a:hover {
+  background-color: #FDD04B;
+  opacity: 0.8;
+  color: #ffffff;
+}
+
+.container__text {
+  padding-top: 15px;
+  color: #ffffff;
+}
+
+.container__text h4 {
+  margin: 0;
+  padding: 0;
+  color: #223547;
+}
+
+.container__text--bioUno img {
+  height: 500px;
+  padding-bottom: 3rem;
+}
+
+.container__text--bioUno p {
+  margin-top: 10rem;
+  width: 50%;
+  float: right;
+}
+
+.container__text--bioDos img {
+  height: 60vh;
+  float: right;
+  padding-bottom: 3rem;
+}
+
+.container__text--bioDos p {
+  margin-top: 10rem;
+  width: 30%;
+}
+
+.container__text--bioTaller {
+  margin-top: 3rem;
+}
+
+.container-blog {
+  background-image: url(/img/curso-online-mecanico-bicicletas_amp_primaria_1_1560503049.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+@media screen and (min-width: 1400px) {
+  .container-blog {
+    margin: 0;
+    padding: 0 0 1rem 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-blog {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .container-blog {
+    display: none;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #223547;
+  overflow-x: hidden;
+}
+
+.video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 80px;
+}
+
+.video--i {
+  width: 100vw;
+  height: 1000px;
+}
+
+@media screen and (max-width: 768px) {
+  .video--i {
+    width: 100%;
+    margin-bottom: 19rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .video--i {
+    width: 100%;
+    margin-bottom: 19rem;
+  }
+}
+
+.fSection {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #FDD04B;
+  width: 100%;
+  height: 40vh;
+  margin-top: 40px;
+  /*newsletter*/
+}
+
+@media screen and (min-width: 1400px) {
+  .fSection {
+    margin-top: 0px;
+  }
+}
+
+.fSection__contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100vw;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*iconos*/
+}
+
+.fSection__contenedor--nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fSection__contenedor--nav-link {
+  padding: 15px;
+  margin: 50px;
+  text-decoration: none;
+  color: #223547;
+}
+
+.fSection__contenedor--nav-link:hover {
+  color: #ffffff;
+}
+
+.fSection__contenedor__iconsBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fSection__contenedor__iconsBox__cajasFooter1 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fSection__contenedor__iconsBox__cajasFooter1--link {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #223547;
+  text-align: center;
+  font-size: 10px;
+}
+
+.fSection__contenedor__iconsBox__cajasFooter1--link:hover {
+  color: #ffffff;
+}
+
+.fSection .fSection__tableCont {
+  margin: 50px;
+  padding: 2%;
+  background-color: #223547;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 29vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 8px #565952;
+          box-shadow: 0px 0px 8px #565952;
+  color: #FDD04B;
+}
+/*# sourceMappingURL=estios.css.map */
