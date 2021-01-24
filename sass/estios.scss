@@ -8,112 +8,84 @@ $full-W: 100vw;
 * {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.2rem;
   box-sizing: border-box;
 }
-
-html {
-  scroll-behavior: smooth;
-}
 body {
-  background-color: $azul;
+  //background-image: linear-gradient(to bottom, #223547, #586171, #8f929e, #c7c7cd, #ffffff);
+  //background-image: linear-gradient(to bottom,  $azul, #34516b);
+  
+  background-image: linear-gradient(to bottom, #223547,  #1a5f54, #8ab174, #fdd04b);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   overflow-x: hidden;
+
 }
 //hero Section css
 .video {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 80px;
+  background-attachment: fixed;
 
-  &--i {
-    
-    @include tablet {
-      width: 100%;
-      margin-bottom: 19rem;
+  .bg-div{
+    text-align: center;
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(150deg, #223547e5,   #313941);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+      height: 17vh;
+      width: 25vw;
+      z-index: 9;
+      top: 70%;
+      left: 64%;
+      border-radius:  10px;
+      box-shadow: 8px 8px 10px -2px #141f2afd,
+      -2px -5px 8px -1px #a9a8a8af;
+    h1{
+      font-size: 2rem;
+      margin: 2% auto 2% ;
+      color: $amarillo;
     }
-    width: 100vw;
-    height: 1000px;
+    .top2{
+      width: 200px;
+      top: 60%;
+      left: 70%;
+      background-color: $color-boton;
+      color: $azul;
+      overflow: hidden; 
+      opacity: 0.8;
+      transition: .5s;
+      box-shadow: 2px 4px 8px -1px #141f2afd,
+      -2px -2px 7px -4px #e7e5de;
+      &:hover{
+        background-color: $amarillo;
+      }
+      &::before{
+        content: 'Contactanos';
+      }
+      &:hover::before{
+        display: none;
+        transition: .5s;
+      }
+      &:hover::after {
+        content: 'Click Aqui';
+        color: $color;
+        transition: .5s;
+        
+    }
+      
   }
+  
 }
 
-
-.fSection {
-  display: inline-flex;
-  background-color: $amarillo;
+.parallax-completo{
   width: 100%;
-  height: 40vh;
-  margin-top: 40px;
-  @include web {
-    margin-top: 0px;
-  }
-  &__contenedor {
-    display: flex;
-    justify-content: flex-start;
-    width: $full-W;
-    flex-direction: row;
-    align-items: center;
-
-    &--nav {
-      display: flex;
-      flex-direction: column;
-      
-
-      &-link{
-        padding: 15px;
-        margin: 50px;
-        text-decoration: none ;
-        color: $azul;
-        &:hover {
-          color: $color;
-        }
-      }
-    }
-    /*iconos*/
-
-
-    &__iconsBox {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-     justify-content: center;
-
-      &__cajasFooter1 {
-        justify-content: center;
-        
-         &--link{
-           justify-content: center;
-             color:$azul;
-            text-align: center;
-            font-size: 10px;
-
-            &:hover {
-              color: $color;
-            }
-          }
-        }
-      }
-    }
-    /*newsletter*/
-
-    .fSection__tableCont {
-      margin: 50px;
-      padding: 2%;
-      background-color: $azul;
-      display: flex;
-      height: 29vh;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      box-shadow: 0px 0px 8px #565952;
-      color: $amarillo;
-      
-
-
-      
-      
-    }
-  }
-
-
+  height: 100vh;
+  background-attachment: fixed;
+}
+}
