@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+    <!--Meta-->
+
     <meta charset="UTF-8" />
     <meta name="author" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +16,8 @@
       content="taller, ciclismo, bike, bici, taller de bicis, taller de bicicletas, mountain bike, ruta, road, mecanico de bicicletas, arreglo de bicicletas, arreglo de bicis, arreglar mi bici, cuarto pedal"
     />
 
-    <title>Taller de bicicletas - Servicio tecnico | Taller Cuarto Pedal</title>
+    <!--Links estilos-->
+
     <link rel="stylesheet" href="css/animate.css" />
     <link
       rel="stylesheet"
@@ -43,15 +47,18 @@
     />
     <link rel="stylesheet" href="/js/main.js" />
     <link rel="stylesheet" href="sass/estios.css" />
+    
+    <title>Taller de bicicletas - Servicio tecnico | Taller Cuarto Pedal</title>
   </head>
 
   <body>
+    
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark position-fixed w-100">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"
             ><img
-              src="img/Asset7.png"
+              src="img/Asset 1@1.5x4P.1x.png"
               alt="Cuarto_Pedal"
               class="navbar__logo--img ms-5"
           /></a>
@@ -73,31 +80,40 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item p-3">
                 <a class="nav-link fs-5 text-color-navbar" href="#"
-                  ><i class="fas color-icono fa-home"></i
-                  ><span class="ms-3 border-azul">Cuarto Pedal</span></a
+                  ><i class="fas color-icono fa-home text-white"></i
+                  ><span class="ms-3 border-azul fst-italic">Cuarto Pedal</span></a
                 >
               </li>
               <li class="nav-item p-3">
                 <a class="nav-link fs-5 text-color-navbar" href="#"
-                  ><i class="far fa-circle"></i
-                  ><span class="ms-3 border-azul">Sobre nosotros</span></a
+                  ><i class="far fa-circle text-white"></i
+                  ><span class="ms-3 border-azul fst-italic">Sobre nosotros</span></a
                 >
               </li>
 
               <li class="nav-item dropdown p-3">
                 <a
-                  class="nav-link fs-5 text-color-navbar"
-                  href="servicios.html"
-                >
-                  <i class="fas fa-tools me-2"
-                    ><span class="ms-3 border-azul">Servicios</span></i
-                  >
+                  class="nav-link fs-6 text-color-navbar dropdown-toggle"
+                  href="servicios.html" role="button" id="drowpdownServiciosLink" data-bs-toggle="dropdown" aria-expanded="false"
+                 >
+                  <i class="fas fa-tools me-2 text-white"
+                    ></i>
+                    <span class="ms-3 border-azul fst-italic">Servicios</span>
                 </a>
+                <ul class="dropdown-menu ms-5" aria-labelledby="drowpdownServiciosLink">
+                  <li><a class="dropdown-item" href="#">Servicio Tecnico</a></li>
+
+                  
+                  <li><a class="dropdown-item" href="#">Retiro y despacho a domicilio</a></li>
+                  <li><a class="dropdown-item" href="#">Asesoria sobre bicicletas</a>
+                    
+                  </li>
+                </ul>
               </li>
               <li class="nav-item p-3">
                 <a class="nav-link fs-5 text-color-navbar" href="#"
-                  ><i class="fas fa-biking"></i
-                  ><span class="ms-3 border-azul">Contacto</span></a
+                  ><i class="fas fa-biking text-white"></i
+                  ><span class="ms-3 border-azul fst-italic">Contacto</span></a
                 >
               </li>
             </ul>
@@ -107,76 +123,79 @@
     </header>
 
     <main>
-      <div class="video">
-        <div
-          id="carouselExampleSlidesOnly parallax-completo"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="d-block text-light bg-div">
-              <h1 class="d-block">Reserva ya!</h1>
-              <button
-                type="button"
-                class="btn btn-lg wow animate__bounceOut top2"
-              ></button>
-            </div>
-            <div class="carousel-item active parallax-completo">
-              <img
-                src="/img/20191010_164712.jpg"
-                class="d-block w-100 parallax-completo"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item parallax-completo">
-              <img
-                src="/img/cris&bike (1).JPG"
-                class="d-block w-100 parallax-completo"
-                alt="..."
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="servicios">
-        <div class="servicios__container">
-          <div class="servicios__container__box--izq m-5">
-            <h1>Mantencion simple</h1>
-            <h2>$20.000</h2>
-            <button class="servicios__container__box--izq--btn">
-              <a href="#">Pedir</a>
-            </button>
-          </div>
-          <div class="servicios__container__box--cnt m-5">
-            <h1>Mantencion Full</h1>
-            <h2>$35.000</h2>
-            <p>
-              Desarme completo de la bicicleta(revisión de motor, dirección y
-              mazas), lavado, engrase y lubricación, cambio de fundas y piolas,
-              regulación de cambios y frenos, centrado de ruedas.
-            </p>
-            <button class="servicios__container__box--cnt--btn">
-              <a href="#">Pedirr</a>
-            </button>
-            <!--<img src="img/Asset7.png" alt="logo" class="hero__container--img" />-->
-          </div>
-          <div class="servicios__container__box--der m-5">
-            <h1>Armado estilizado</h1>
-            <h2>Valor variable</h2>
-            <p>
-              Armado de bicicletas bajo los requerimientos y presupuesto
-              entregado por el cliente
-            </p>
-            <button class="servicios__container__box--der--btn">
-              <a href="#">Pedir</a>
-            </button>
-          </div>
-        </div>
-      </div>
+     
     </main>
 
-    <footer></footer>
+   <!-- <footer class="br-dark text-white pt-5 pb-4">
+
+      <div class="ccontainer text-center text-md-left">
+
+        <div class="row text-center text-md-left">
+
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h1 class="text-uppercase text-secondary mb-4 font-weight-bold">
+              CUARTO PEDAL
+            </h1>
+            <p class="text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              quaerat quas iusto, exercitationem, doloremque corrupti iste sit
+              dolore aliquam necessitatibus fuga, ducimus sunt.
+            </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercasee mb-4 font-weight-bold text-white">Servicios</h5>
+            <p>
+              <a href="#" class="text-withe">Mantencion.</a>
+            </p>
+            <p>
+              <a href="#" class="text-withe">Armado estilizado.</a>
+            </p>
+            <p>
+              <a href="#" class="text-withe">Retiro a domicilio.</a>
+            </p>
+          </div>
+          <div class="co-md-3 col-lg-2 mx-auto mt-3">
+            <h5 class="text-uppercasee mb-4 font-weight-bold text-white">Tu cuenta</h5>
+            <p>
+              <a href="#" class="text-withe">Inicia sesion.</a>
+            </p>
+            <p>
+              <a href="#" class="text-withe">Registrate.</a>
+            </p>
+            <p>
+              <a href="#" class="text-withe">Perdi mi contrasena.</a>
+            </p>
+            
+          </div>
+          <div class="co-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercasee mb-4 font-weight-bold text-white">Medios de contacto</h5>
+            <p>
+              <i class="fas fa-home mr-3 "><a class="ms-2" href="index.html">Dr.Johow 365, dpto 305. <br>   Nunoa, Santiado de Chile.</a></i>
+            </p>
+            <p>
+              <i class="fas fa-phone mr-3"><a class="ms-4" href="#">+569-58250108</a></i>
+            </p>
+            <p>
+              <i class="fas fa-egg mr-3"><a class="ms-5" href="index.html">@cuartopedal</a></i>
+        
+            </p>
+          
+          </div>
+        </div>
+          <hr class="mb-4">
+          <div class="row align-items-center">
+            <div class="col-md-7 col-lg-8">
+              <p class="text-secondary">Copyright @2021 All rights reserverd by:
+                <a href="#">
+                  <strong>eDev</strong>
+                </a>
+              </p>
+            </div>
+
+          </div>
+      </div>
+
+    </footer>-->
     <script src="js/wow.min.js"></script>
     <script>
       wow = new WOW({
