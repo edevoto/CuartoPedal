@@ -7,21 +7,48 @@
 .navbar .navbar-bg-color {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  margin-left: 25%;
   margin-right: 2rem;
   margin-bottom: 2%;
+  color: #ffffff;
+}
+
+.navbar .navbar-bg-color .color-icono {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1400px) {
+  .navbar .navbar-bg-color .color-icono {
+    color: #FDD04B !important;
+  }
 }
 
 .navbar .navbar-bg-color .text-color-navbar {
   color: #FDD04B !important;
-  /* i{
-        color: $azul;
-        
-      }*/
+}
+
+.navbar .navbar-bg-color .text-color-navbar:hover {
+  color: #ffffff !important;
 }
 
 .navbar .navbar-bg-color .text-color-navbar .border-azul {
+  display: inline;
   text-shadow: -1px -1px 2px #312d2d, 1px 1px 2px #223547;
+}
+
+@media screen and (min-width: 500px) {
+  .navbar .navbar-bg-color .text-color-navbar .border-azul {
+    display: inline;
+    font-size: 1rem;
+    color: #FDD04B;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .navbar .navbar-bg-color .text-color-navbar .border-azul {
+    font-size: 1rem;
+    padding: 10px;
+    display: none;
+  }
 }
 
 .navbar .navbar-bg-color .text-color-navbar .border-azul:hover {
@@ -29,15 +56,19 @@
   border-radius: 6px;
 }
 
-.navbar .navbar-bg-color .text-color-navbar:hover {
-  color: #ffffff !important;
-}
-
-.navbar .navbar__logo--img {
+.navbar__logo--img {
   height: 180px;
   width: 190px;
-  margin-right: 50px;
-  border-radius: 900px;
+  background-color: #223547af;
+  border-radius: 999px;
+}
+
+@media screen and (max-width: 1400px) {
+  .navbar__logo--img {
+    margin-right: 0px;
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .servicios {
@@ -72,16 +103,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .servicios__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 1400px) {
   .servicios__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -139,22 +161,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .servicios__container__box--izq, .servicios__container__box--cnt, .servicios__container__box--der {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100vw;
-    height: 40vh;
-    border: 1px solid #ffffff;
-    padding: 3rem;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-}
-
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 1400px) {
   .servicios__container__box--izq, .servicios__container__box--cnt, .servicios__container__box--der {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -211,13 +218,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 1400px) {
   .container {
     display: none;
   }
@@ -294,21 +295,38 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1400px) {
   .container-blog {
     display: none;
   }
 }
 
-@media screen and (max-width: 280px) {
-  .container-blog {
+footer .footer__logo--img {
+  height: 280px;
+  width: 300px;
+}
+
+@media screen and (max-width: 1400px) {
+  footer .footer__logo--img {
     display: none;
   }
 }
 
 footer div a {
-  color: #223547;
+  color: #ffffff;
   text-decoration: none;
+}
+
+footer div a:hover {
+  color: #FDD04B !important;
+}
+
+.bg-azul {
+  background-image: linear-gradient(85deg, #223547, #31475a);
+}
+
+.titulo-amarillo {
+  color: #FDD04B !important;
 }
 
 * {
@@ -316,14 +334,12 @@ footer div a {
   padding: 0;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1.2rem;
+  font-style: italic;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 body {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   overflow-x: hidden;
 }
 

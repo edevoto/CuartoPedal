@@ -11,16 +11,13 @@ $full-W: 100vw;
   padding: 0;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1.2rem;
+  font-style: italic;
   box-sizing: border-box;
 }
 body {
   //background-image: linear-gradient(to bottom, #223547, #586171, #8f929e, #c7c7cd, #ffffff);
   //background-image: linear-gradient(to bottom,  $azul, #34516b);
   
- // background-image: linear-gradient(to bottom, #223547,  #1a5f54, #8ab174, #fdd04b);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   overflow-x: hidden;
 
 }
